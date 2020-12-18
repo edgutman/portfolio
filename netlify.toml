@@ -4,9 +4,5 @@
 # PER-DEPLOY.
 
 [[redirects]]
-  from = "/"
-  to = "/site"
-
-[[redirects]]
   from = "/portfolio-brief"
   to = "/files/portfolio-brief.pdf"
