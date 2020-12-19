@@ -5,4 +5,8 @@
 
 [[redirects]]
   from = "/portfolio-brief"
-  to = "/files/portfolio-brief.pdf"
+  to = "/files/egutman_portfolio.pdf"
+
+[[redirects]]
+  from = "/resume"
+  to = "/files/egutman_resume.pdf"
