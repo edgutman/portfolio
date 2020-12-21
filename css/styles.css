@@ -30,6 +30,7 @@ body {
     height: 480px;
     padding: 20px; 
     background-color: #fafafa;
+    box-shadow: 0px 9px 28px #00000005, 0px 6px 16px #00000008, 0px 3px 6px #00000012);
     border-radius: 0px 0px 10px 10px;
 }
 .message .chat-bubble {
