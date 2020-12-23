@@ -1,11 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Julius+Sans+One&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 body {
-    background-color: #00000085;
-    font-family: Arial, Helvetica, sans-serif;}
-.wrapper {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 340px 1fr;
+    background-color: #FBC4AB;
+    font-family: 'Heebo', Arial, Helvetica, sans-serif;
+    line-height: 136%;
 }
 .content {
-    margin-top: 30px;   
+    color: #00000095;
+    background-color: #FFFFFF80;
+    padding: 10px 10px 10px 10px;
+    border-radius: 2px;
+    box-shadow: 0px 9px 28px #FF4B2305, 0px 6px 16px #FF4B2308, 0px 3px 6px #FF4B2312;
+}
+.content h1 {
+    margin: 0px;
+    padding: 10px 0px 10px 0px;
+    font-size:40px;
+    font-style: normal;
+    font-weight: 400;
+}
+.content p {
+    margin: 0px;
+    padding: 10px 0px 10px 0px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+.nav ul {
+    list-style-type: none;
+    margin: 0 auto;
+}
+#menu {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    color: #ffffff;
+}
+#menu li {
+    width: 84px;
+    height: 84px;
+    display: table;
+    background-color: #F08080;
+    border-radius: 2px;
+    box-shadow: 0px 9px 28px #FF4B2305, 0px 6px 16px #FF4B2308, 0px 3px 6px #FF4B2312;
+}
+#menu li > a {
+    text-decoration: none;
+    display: table-cell;
+    vertical-align: middle;
+    color: #FFFFFF;
+}
+.grid-container {
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, 120px);
+    grid-template-rows: repeat(5, 120px);
+    grid-gap: 0px;
+    row-gap: 0px;
+}
+.grid > div {
+    height: 120px;
+}
+.active {
+    /* display: table; */
+    border: 1px solid red;
+}
+.active p {
+    /* display: table; */
+    /* padding: 20px; */
+    width: 84px;
+    height: 84px;
+    margin-left: 16px;
+    border: 2px solid blue;
+    text-align: center;
+    vertical-align: middle;
+}
+#heart {
+    color: #FF3E25;
 }
