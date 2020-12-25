@@ -4,18 +4,25 @@ body {
     font-family: 'Heebo', Arial, Helvetica, sans-serif;
     line-height: 136%;
 }
-.column-grid {
+.wrapper {
     display: grid;
     position: relative;
-    grid-template-columns: repeat(4, 280px);
-
+    grid-template-columns: 1fr 280px 1fr;
+    /* bottom: 50%; */
+    transform: translate(0, 15%);
 }
+.top-bio {
+    position: absolute;
+    grid-area: 1 / 2 / span 1 / span 1;
+    transform: translate(-80%, 15%);
+}
+
 #avatar img {
     box-shadow: 0px 9px 28px #FF4B2305, 0px 6px 16px #FF4B2308, 0px 3px 6px #FF4B2312;
 }
 .content {
-    color: #00000095;
-    background-color: #FFFFFF80;
+    color: #00000098;
+    background-color: #FFFFFF99;
     padding: 10px 10px 10px 10px;
     border-radius: 2px;
     box-shadow: 0px 9px 28px #FF4B2305, 0px 6px 16px #FF4B2308, 0px 3px 6px #FF4B2312;
@@ -36,6 +43,7 @@ body {
 }
 .bottom-grid {
     position: relative;
+    grid-area: 1 / 1 / span 1 / span 4;
     height: 600px;
 }
 .grid-layer {
@@ -48,7 +56,7 @@ body {
     left: 50%;
     transform: translate(31%, 21.5%);
 }
-.nav-layer ul {
+ul {
     list-style-type: none;
     margin: 0 auto;
 }
@@ -73,7 +81,9 @@ body {
     vertical-align: middle;
     color: #FFFFFF;
 }
-.grid-layer {
+li:hover {
+    outline: 3px solid #099CEE60;
+    box-shadow: 0px 9px 32px #099CEE60, 0px 6px 28px #099CEE60, 0px 3px 12px #099CEE60;
 }
 .grid {
     display: grid;
@@ -87,31 +97,32 @@ body {
 }
 .active {
     display: table;
-    border-left: 2px solid #FF4B2340;
-    border-top: 2px solid #FF4B2340;
+    border-left: 3px solid #FF4B2340;
+    border-top: 3px solid #FF4B2340;
 }
 .active-left {
-    border-left: 2px solid #FF4B2340;
+    border-left: 3px solid #FF4B2340;
 }
 .active-top {
-    border-top: 2px solid #FF4B2340;
+    border-top: 3px solid #FF4B2340;
 }
 .active-bottom {
     display: table;
-    border-left: 2px solid #FF4B2340;
-    border-top: 2px solid #FF4B2340;
-    border-bottom: 2px solid #FF4B2340;
+    border-left: 3px solid #FF4B2340;
+    border-top: 3px solid #FF4B2340;
+    border-bottom: 3px solid #FF4B2340;
 }
 .active-right {
     display: table;
-    border-top: 2px solid #FF4B2340;
-    border-right: 2px solid #FF4B2340;
-    border-left: 2px solid #FF4B2340;
+    border-top: 3px solid #FF4B2340;
+    border-right: 3px solid #FF4B2340;
+    border-left: 3px solid #FF4B2340;
 }
 .active p {
     display: table-cell;
-    color: #00000045;
-    padding: 10px;
+    font-size: 14px;
+    color: #00000025;
+    padding: 16px;
     width: 84px;
     height: 84px;
     margin-left: 16px;
@@ -121,3 +132,8 @@ body {
 #heart {
     color: #FF3E25;
 }
+@media only screen and (max-width: 840px) {
+    .wrapper {
+        grid-template-columns: 280px 280px 1fr;
+    }
+  }
