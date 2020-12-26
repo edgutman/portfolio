@@ -85,7 +85,7 @@ ul {
 }
 #menu > li:hover {
     color: #4FADEC;
-    box-shadow: 0px 3px 6px #4FADEC40;
+    box-shadow: 0px 0px 6px 3px #4FADEC40;
 }
 .grid {
     display: grid;
