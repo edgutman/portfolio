@@ -59,6 +59,7 @@ body {
 ul {
     list-style-type: none;
     margin: 0 auto;
+
 }
 #menu {
     font-size: 18px;
@@ -73,17 +74,18 @@ ul {
     display: table;
     background-color: #F08080;
     border-radius: 2px;
-    box-shadow: 0px 9px 28px #FF4B2305, 0px 6px 16px #FF4B2308, 0px 3px 6px #FF4B2312;
+    /* box-shadow: 0px 9px 28px #FF4B2305, 0px 6px 16px #FF4B2308, 0px 3px 6px #FF4B2312; */
 }
 #menu li > a {
     text-decoration: none;
     display: table-cell;
     vertical-align: middle;
     color: #FFFFFF;
+
 }
-li:hover {
-    outline: 3px solid #099CEE60;
-    box-shadow: 0px 9px 32px #099CEE60, 0px 6px 28px #099CEE60, 0px 3px 12px #099CEE60;
+#menu > li:hover {
+    color: #4FADEC;
+    box-shadow: 0px 3px 6px #4FADEC40;
 }
 .grid {
     display: grid;
@@ -118,7 +120,7 @@ li:hover {
     border-right: 3px solid #FF4B2340;
     border-left: 3px solid #FF4B2340;
 }
-.active p {
+#made-by {
     display: table-cell;
     font-size: 14px;
     color: #00000025;
