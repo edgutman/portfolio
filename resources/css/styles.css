@@ -54,7 +54,7 @@ body {
 .nav-layer {
     position: absolute;
     left: 50%;
-    transform: translate(31%, 21.5%);
+    transform: translate(31%, 29%);
 }
 ul {
     list-style-type: none;
@@ -74,7 +74,7 @@ ul {
     display: table;
     background-color: #F08080;
     border-radius: 2px;
-    /* box-shadow: 0px 9px 28px #FF4B2305, 0px 6px 16px #FF4B2308, 0px 3px 6px #FF4B2312; */
+    box-shadow: 0px 9px 28px #FF4B2306, 0px 6px 16px #FF4B2312, 0px 3px 6px #FF4B2318;
 }
 #menu li > a {
     text-decoration: none;
@@ -98,27 +98,24 @@ ul {
     height: 120px;
 }
 .active {
-    display: table;
-    border-left: 3px solid #FF4B2340;
-    border-top: 3px solid #FF4B2340;
+    border-left: 3px solid #FCA88C;
+    border-top: 3px solid #FCA88C;
 }
 .active-left {
-    border-left: 3px solid #FF4B2340;
+    border-left: 3px solid #FCA88C;
 }
 .active-top {
-    border-top: 3px solid #FF4B2340;
+    border-top: 3px solid #FCA88C;
 }
 .active-bottom {
-    display: table;
-    border-left: 3px solid #FF4B2340;
-    border-top: 3px solid #FF4B2340;
-    border-bottom: 3px solid #FF4B2340;
+    border-left: 3px solid #FCA88C;
+    border-top: 3px solid #FCA88C;
+    border-bottom: 3px solid #FCA88C;
 }
 .active-right {
-    display: table;
-    border-top: 3px solid #FF4B2340;
-    border-right: 3px solid #FF4B2340;
-    border-left: 3px solid #FF4B2340;
+    border-top: 3px solid #FCA88C;
+    border-right: 3px solid #FCA88C;
+    border-left: 3px solid #FCA88C;
 }
 #made-by {
     display: table-cell;
