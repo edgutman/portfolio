@@ -15,3 +15,18 @@
   from = "/works"
   to = "/works.html"
   status = 200
+
+  [[redirects]]
+  from = "/works/kidappolis"
+  to = "/works/kidappolis.html"
+  status = 200
+
+  [[redirects]]
+  from = "/works/pixel"
+  to = "/works/qpixel.html"
+  status = 200
+
+  [[redirects]]
+  from = "/works/permisio"
+  to = "/works/permisio.html"
+  status = 200
