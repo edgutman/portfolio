@@ -21,16 +21,35 @@ body {
         grid-column: span 1;
     }  
 }
-.case-header h1 {
-    font-size: 40px;
+.crumb > a {
+    text-decoration: none;
     font-weight: 400;
-    margin-top: 10;
+    color: #F08080;
+}
+.case-text {
+    background-color: #FF000030;
+    border-radius: 4px;
+    box-shadow: 0px 9px 28px #FF4B2306, 0px 6px 16px #FF4B2312, 0px 3px 6px #FF4B2318;
+    margin: 12px;
+}
+.case-text h1 {
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 0.95;
+    margin-top: 10px;
+    padding-top: 12px;
     margin-bottom: 0;
 }
-.case-header h4 {
+.case-text h4 {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     color: #00000075;
+}
+.content {
+    background-color: #ffffff60;
+    border-radius: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 .crumb {
     font-weight: 300;
