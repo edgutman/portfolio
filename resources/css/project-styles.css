@@ -5,22 +5,26 @@ body {
 }
 .wrapper {
     display: grid;
-    position: relative;
-    /* grid-gap: 16px; */
-    grid-template-columns: 1fr 1fr;
-    /* grid-template-columns: 1fr minmax(414px, 1fr); */
-    grid-template-rows: auto auto auto;
-    margin: 0px 200px 0px 200px;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0px 120px 0px 120px;
 }
-.case-header {
-    background-color: #FF000015;
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 1;
+.case-header, .case-image {
+    grid-column: span 2;
+}
+@media only screen and (max-width: 740px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0px 20px 0px 20px;
+    }
+    .case-header, .case-image {
+        grid-column: span 1;
+    }  
 }
 .case-header h1 {
     font-size: 40px;
     font-weight: 400;
-    margin-top: 0;
+    margin-top: 10;
     margin-bottom: 0;
 }
 .case-header h4 {
@@ -35,18 +39,7 @@ body {
     color: #F08080;
 }
 .content {
-    /* background-color: #FF000015; */
     margin: 20px;
-}
-.case-text {
-    background-color: #FF000015;
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
-}
-.case-score {
-    background-color: #FF000015;
-    grid-column: 2 / span 1;
-    grid-row: 2 / span 1;
 }
 .content-rating {
     display: grid;
@@ -67,6 +60,9 @@ body {
 .rating-title:first-child {
     padding: 0;
 }
+.rating-title {
+    margin-right: 10px;
+}
 .content-number {
     margin: 0;
     padding: 0;
@@ -85,43 +81,12 @@ body {
     background: #f2f2f2;
     border-radius: 50%;
 }
-.case-image {
-    background-color: #FF000015;
-    grid-column: 1 / span 2;
-    grid-row: 3 / span 1;
-}
 .case-image img {
     display: block;
-    max-width: 100%;
+    width: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     border-radius: 4px;
     box-shadow: 0px 9px 28px #00000006, 0px 6px 16px #00000012, 0px 3px 6px #00000018;
-}
-@media only screen and (max-width: 996px) {
-    .wrapper {
-        display: grid;
-        position: relative;
-        /* grid-gap: 16px; */
-        grid-template-columns: 1fr;
-        /* grid-template-columns: 1fr minmax(414px, 1fr); */
-        grid-template-rows: 1fr auto auto auto;
-        margin: 0px 50px 0px 50px;
-    }
-    .case-header {
-        background-color: #FF000015;
-        grid-row: 1 / span 1;
-    }
-    .case-text {
-        background-color: #FF000015;
-        grid-row: 2 / span 1;
-    }
-    .case-score {
-        background-color: #FF000015;
-        grid-row: 3 / span 1;
-    }
-    .case-image {
-        background-color: #FF000015;
-        grid-row: 4 / span 1;
-    }
 }
