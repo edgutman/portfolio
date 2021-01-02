@@ -6,8 +6,8 @@ body {
 }
 .wrapper {
     display: grid;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 240px;
+    margin-right: 240px;
 }
 .grid-wrapper {
     display: grid;
