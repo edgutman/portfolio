@@ -1,2 +1,7 @@
+User-agent: *
+Disallow: /resources/
+
 User-agent: Googlebot-Image
 Disallow: /
+
+Sitemap: https://www.edgutman.com/sitemap.xml
