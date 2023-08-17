@@ -55,6 +55,16 @@ body {
     display: grid;
     grid-template-columns: 1fr;
 }
+a {
+    text-decoration: none;
+}
+a:link {
+    font-weight: 400;
+    color: #1EBFF0;
+}
+a:hover {
+    color: #A456E1;
+}
 .project-item-mobile {
     display: grid;
     grid-template-columns: 375px 1fr;
