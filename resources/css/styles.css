@@ -83,7 +83,7 @@ body {
     grid-column: span 2;
 }
 .project-item-desk > .hero img {
-    width: auto;
+    width: fit-content;
 }
 .project-item-mobile > .description {
     margin-top: 220px;
