@@ -14,7 +14,7 @@ body {
 }
 .page-wrapper {
     display: grid;
-    grid-template-columns: minmax(180px, 1fr) 880px minmax(100px, 1fr);
+    grid-template-columns: minmax(180px, 1fr) 1024px minmax(100px, 1fr);
     justify-content: center;
 }
 .left, .right {
@@ -109,7 +109,7 @@ body {
 .description h3 {
     line-height: 130%;
     font-weight: 200;
-    font-size: small;
+    font-size: medium;
     color: #00000070;
 }
 .description p {
