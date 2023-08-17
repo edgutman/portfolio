@@ -5,4 +5,5 @@
 ## Changelog
 2020-12-21  Moving the old design from Wordpress/Semplice into a new static website that should be easily scalable as a I add new projects or different content types.
 2021-01-02  New year, new website merged into main!
+2023-08-16  Redsigned to a simpler one page dribble-style site.
 
