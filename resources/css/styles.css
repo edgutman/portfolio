@@ -31,16 +31,17 @@ body {
 .left h1 {
     margin-top: 48px;
     font-weight: 300;
+    font-size: larger;
 }
 .left h2 {
     font-weight: 300;
-    font-size: medium;
+    font-size: large;
     color: #00000090;
 }
 .left, .right p {
     line-height: 130%;
     font-weight: 200;
-    font-size: small;
+    font-size: medium;
     color: #00000070;
 }
 .footer {
