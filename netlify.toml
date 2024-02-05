@@ -4,7 +4,7 @@
 # PER-DEPLOY.
 
 [[redirects]]
-  from = "/portfolio-brief"
+  from = "/portfolio"
   to = "/files/egutman_portfolio.pdf"
 
 [[redirects]]
