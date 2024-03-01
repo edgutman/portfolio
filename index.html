@@ -38,13 +38,13 @@
                             <canvas id="canvas"></canvas>
                             <script src="resources/js/rive.js"></script> <!-- rive 2.10.3 -->
                             <script>
-                                const r = new rive.Rive({
+                                const lyft = new rive.Rive({
                                     src: '/resources/animations/lyft_tap_to_add.riv',
                                     canvas: document.getElementById("canvas"),
                                     autoplay: true,
                                     stateMachines: "demo",
                                     onLoad: () => {
-                                      r.resizeDrawingSurfaceToCanvas();
+                                        lyft.resizeDrawingSurfaceToCanvas();
                                     },
                                 });
                             </script>
@@ -107,13 +107,13 @@
                         <canvas id="canvas"></canvas>
                         <script src="resources/js/rive.js"></script> <!-- rive 2.10.3 -->
                         <script>
-                            const r = new rive.Rive({
+                            const affirm = new rive.Rive({
                                 src: '/resources/animations/affirm_notifications.riv',
                                 canvas: document.getElementById("canvas"),
                                 autoplay: true,
                                 stateMachines: "demo",
                                 onLoad: () => {
-                                  r.resizeDrawingSurfaceToCanvas();
+                                    affirm.resizeDrawingSurfaceToCanvas();
                                 },
                             });
                         </script>
