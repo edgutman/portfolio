@@ -37,7 +37,11 @@ body {
     margin-right: 48px;
     background-color: #EAEAEA;
 }
-#canvas {
+#canvas1 {
+    width: 375px;
+    height: 766px;
+}
+#canvas2 {
     width: 375px;
     height: 766px;
 }
