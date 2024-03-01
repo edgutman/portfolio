@@ -14,7 +14,7 @@ const rive = require("@rive-app/canvas");
 const riveCanvas = document.getElementById("canvas")
 
 const riveInstance = new rive.Rive({
-  src: "/files/lyft_tap_to_add.riv",
+  src: "http://staging.edgutman.com/files/lyft_tap_to_add.riv",
   stateMachines: "portfolio",
   canvas: riveCanvas,
   autoplay: true,
