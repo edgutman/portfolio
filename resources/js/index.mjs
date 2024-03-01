@@ -10,7 +10,7 @@ const layout = new rive.Layout({
 const riveCanvas = document.getElementById("canvas")
 
 const riveInstance = new rive.Rive({
-  src: "/files/lyft_tap_to_add.riv",
+  src: '/files/lyft_tap_to_add.riv',
   stateMachines: "portfolio",
   canvas: riveCanvas,
   autoplay: true,
