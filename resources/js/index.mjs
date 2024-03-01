@@ -11,12 +11,12 @@ const rive = require("@rive-app/canvas");
 //   alignment: rive.Alignment.Center,
 // });
 
-const riveCanvas = document.getElementById("canvas")
+const canvas = document.getElementById("canvas")
 
 const riveInstance = new rive.Rive({
   src: "/files/lyft_tap_to_add.riv",
   stateMachines: "portfolio",
-  canvas: document.getElementById("canvas"),
+  canvas: canvas,
   autoplay: true,
   onLoad: () => {
     riveInstance.resizeDrawingSurfaceToCanvas();
