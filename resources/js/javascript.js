@@ -1,1 +1,0 @@
-import * as rive from "@rive-app/canvas";
