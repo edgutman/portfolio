@@ -35,17 +35,14 @@
             <div class="main-content-wrapper">
                 <div class="project-item-mobile">
                     <div class="hero">
-                            <canvas 
-                                id="canvas" 
-                                style="width: 375px; height: 766px;">
-                            </canvas>
+                            <canvas id="canvas"></canvas>
                             <script src="resources/js/rive.js"></script> <!-- rive 2.10.3 -->
                             <script>
                                 const r = new rive.Rive({
                                     src: '/resources/animations/lyft_tap_to_add.riv',
                                     canvas: document.getElementById("canvas"),
                                     autoplay: true,
-                                    stateMachines: "portfolio",
+                                    stateMachines: "demo",
                                     onLoad: () => {
                                       r.resizeDrawingSurfaceToCanvas();
                                     },
@@ -107,7 +104,19 @@
                 </div>
                 <div class="project-item-mobile">
                     <div class="hero">
-                        <img src="resources/images/projects/2022-01.png">
+                        <canvas id="canvas"></canvas>
+                        <script src="resources/js/rive.js"></script> <!-- rive 2.10.3 -->
+                        <script>
+                            const r = new rive.Rive({
+                                src: '/resources/animations/affirm_notifications.riv',
+                                canvas: document.getElementById("canvas"),
+                                autoplay: true,
+                                stateMachines: "demo",
+                                onLoad: () => {
+                                  r.resizeDrawingSurfaceToCanvas();
+                                },
+                            });
+                        </script>
                     </div>
                     <div class="description">
                         <h1>Affirm</h1>
