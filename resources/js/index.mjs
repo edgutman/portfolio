@@ -1,4 +1,4 @@
-import "/resources/css/styles.css";
+import "resources/css/styles.css";
 
 const rive = require("@rive-app/canvas");
 
@@ -15,12 +15,10 @@ const riveCanvas = document.getElementById("canvas")
 
 const riveInstance = new rive.Rive({
   src: "/files/lyft_tap_to_add.riv",
-  stateMachines: "portfolio", // Name of the State Machine to play
+  stateMachines: "portfolio",
   canvas: canvas,
-  // layout: layout, // This is optional. Provides additional layout control.
   autoplay: true,
   onLoad: () => {
-    // Prevent a blurry canvas by using the device pixel ratio
     riveInstance.resizeDrawingSurfaceToCanvas();
   }
 });
