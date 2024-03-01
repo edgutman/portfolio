@@ -2,19 +2,15 @@ import "/resources/css/styles.css";
 
 const rive = require("@rive-app/canvas");
 
-// ----
-// LOCAL RIVE EXAMPLE
-// ----
-
-// const layout = new rive.Layout({
-//   fit: rive.Fit.FitWidth, // Change to: rive.Fit.Contain, or Cover
-//   alignment: rive.Alignment.Center,
-// });
+const layout = new rive.Layout({
+  fit: rive.Fit.FitWidth, // Change to: rive.Fit.Contain, or Cover
+  alignment: rive.Alignment.Center,
+});
 
 const riveCanvas = document.getElementById("canvas")
 
 const riveInstance = new rive.Rive({
-  src: "http://staging.edgutman.com/files/lyft_tap_to_add.riv",
+  src: "/files/lyft_tap_to_add.riv",
   stateMachines: "portfolio",
   canvas: riveCanvas,
   autoplay: true,
@@ -23,16 +19,13 @@ const riveInstance = new rive.Rive({
   }
 });
 
-// Resize the drawing surface if the window resizes
-// window.addEventListener(
-//   "resize",
-//   () => {
-//     riveInstance.resizeDrawingSurfaceToCanvas();
-//   },
-//   false
-// );
-
-// ---------------------------------
+window.addEventListener(
+  "resize",
+  () => {
+    riveInstance.resizeDrawingSurfaceToCanvas();
+  },
+  false
+);
 
 // ----
 // HOSTED RIVE EXAMPLE
