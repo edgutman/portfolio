@@ -1,4 +1,4 @@
-import "resources/css/styles.css";
+import "/resources/css/styles.css";
 
 const rive = require("@rive-app/canvas");
 
