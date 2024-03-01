@@ -95,9 +95,9 @@ a:hover {
 .hero {
     height: auto;
 }
-#canvas {
+/* #canvas {
     width: 375px;
-}
+} */
 .project-item-mobile > .hero img {
     width: 375px;
 }
