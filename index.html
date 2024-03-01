@@ -35,7 +35,20 @@
             <div class="main-content-wrapper">
                 <div class="project-item-mobile">
                     <div class="hero">
-                        <img src="resources/images/projects/2023-03.png">
+                    <!--    <img src="resources/images/projects/2023-03.png"> -->
+                            <canvas id="canvas" width="832"></canvas>
+                            <script src="https://unpkg.com/@rive-app/canvas@2.9.1"></script>
+                            <script>
+                                const r = new rive.Rive({
+                                    src: '/files/lyft_tap_to_add.riv',
+                                    canvas: document.getElementById("canvas"),
+                                    autoplay: true,
+                                    stateMachines: "portfolio",
+                                    onLoad: () => {
+                                      r.resizeDrawingSurfaceToCanvas();
+                                    },
+                                });
+                            </script>
                     </div>
                     <div class="description">
                         <h1>Lyft</h1>
