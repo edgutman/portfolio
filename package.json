@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@rive-app/canvas": "^2.10.3"
+  }
+}
