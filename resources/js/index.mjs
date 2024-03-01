@@ -16,7 +16,7 @@ const riveCanvas = document.getElementById("canvas")
 const riveInstance = new rive.Rive({
   src: "/files/lyft_tap_to_add.riv",
   stateMachines: "portfolio",
-  canvas: canvas,
+  canvas: document.getElementById("canvas"),
   autoplay: true,
   onLoad: () => {
     riveInstance.resizeDrawingSurfaceToCanvas();
