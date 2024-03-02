@@ -1,18 +1,7 @@
-.goldman-regular {
-    font-family: "Goldman", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}  
-.goldman-bold {
-    font-family: "Goldman", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: larger;
-}
 body {
-    font-family: Helvetica, sans-serif;
-    line-height: 100%;
-    background-color: #F6F6F6;
+    font-family: Inter, sans-serif;
+    line-height: 150%;
+    background-color: #FFFFFF;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 48px;
@@ -30,33 +19,31 @@ body {
     position: sticky;
     top: 0;
     height: 100vh;
-    background-color: #F6F6F6;
+    background-color: #FFFFFF;
 }
 .main-content {
     margin-left: 48px;
     margin-right: 48px;
     background-color: #EAEAEA;
 }
-#canvas1 {
-    width: 375px;
-    height: 766px;
-}
-#canvas2 {
+[id^='canvas_'] {
     width: 375px;
     height: 766px;
 }
 .left h1 {
+    font-weight: 500;
+    font-style: normal;
+    font-size: medium;
+    text-transform: uppercase;
     margin-top: 48px;
-    font-weight: 300;
-    font-size: x-large;
 }
 .left h2 {
     font-weight: 300;
-    font-size: large;
+    font-size: medium;
     color: #00000090;
 }
 .left, .right p {
-    line-height: 130%;
+    line-height: 150%;
     font-weight: 200;
     font-size: medium;
     color: #00000070;
@@ -103,9 +90,6 @@ a:hover {
 .hero {
     height: auto;
 }
-/* #canvas {
-    width: 375px;
-} */
 .project-item-mobile > .hero img {
     width: 375px;
 }
@@ -144,7 +128,7 @@ a:hover {
 }
 .description p {
     padding-top: 8px;
-    line-height: 130%;
+    line-height: 150%;
     font-weight: 200;
     font-size: medium;
     color: #00000070;

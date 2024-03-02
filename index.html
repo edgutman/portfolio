@@ -16,6 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>Ed Gutman</title>
@@ -35,19 +36,7 @@
             <div class="main-content-wrapper">
                 <div class="project-item-mobile">
                     <div class="hero">
-                            <canvas id="canvas1"></canvas>
-                            <script src="resources/js/rive.js"></script> <!-- rive 2.10.3 -->
-                            <script>
-                                const lyft = new rive.Rive({
-                                    src: '/resources/animations/lyft_tap_to_add.riv',
-                                    canvas: document.getElementById("canvas1"),
-                                    autoplay: true,
-                                    stateMachines: "demo",
-                                    onLoad: () => {
-                                        lyft.resizeDrawingSurfaceToCanvas();
-                                    },
-                                });
-                            </script>
+                        <canvas id="canvas_lyft"></canvas> <!-- rive animation -->
                     </div>
                     <div class="description">
                         <h1>Lyft</h1>
@@ -104,19 +93,7 @@
                 </div>
                 <div class="project-item-mobile">
                     <div class="hero">
-                        <canvas id="canvas2"></canvas>
-                        <script src="resources/js/rive.js"></script> <!-- rive 2.10.3 -->
-                        <script>
-                            const affirm = new rive.Rive({
-                                src: '/resources/animations/affirm_notifications.riv',
-                                canvas: document.getElementById("canvas2"),
-                                autoplay: true,
-                                stateMachines: "demo",
-                                onLoad: () => {
-                                    affirm.resizeDrawingSurfaceToCanvas();
-                                },
-                            });
-                        </script>
+                        <canvas id="canvas_affirm"></canvas> <!-- rive animation -->
                     </div>
                     <div class="description">
                         <h1>Affirm</h1>
@@ -124,6 +101,17 @@
                         <p>#fintech, #consumer, #mobile, #iOS, #Android, #growth, #zero-to-one</p>
                         <p>Helping Affirm customers wrangle the many types of notifications they received by introducing a new notifications feed.</p>
                         <p><a href="https://www.figma.com/file/Z6ynTFkkTT6ulusqfagyLr/portfolio?type=design&node-id=920%3A2152&mode=design&t=QaAWrVt3ZoaAdzhD-1">Case study</a> (please contact for password)</p>
+                    </div>
+                </div>
+                <div class="project-item-mobile">
+                    <div class="hero">
+                        <img src="resources/images/projects/2022-04.png">
+                    </div>
+                    <div class="description">
+                        <h1>Affirm</h1>
+                        <h2><span>Virtual Card, </span>2022</h2>
+                        <p>#fintech, #consumer, #mobile, #iOS, #Android, #growth, #zero-to-one</p>
+                        <p>Updating the Affirm App to make Virtual Cards a first class flow instead of a buried options in the checkout flow.</p>
                     </div>
                 </div>
                 <div class="project-item-mobile">
@@ -192,5 +180,26 @@
         </div>
     </div>
 </div>
+<script src="resources/js/rive.js"></script> <!-- rive 2.10.3 -->
+<script>
+    const lyft = new rive.Rive({
+            src: '/resources/animations/lyft_tap_to_add.riv',
+            canvas: document.getElementById("canvas_lyft"),
+            autoplay: true,
+            stateMachines: "demo",
+            onLoad: () => {
+                lyft.resizeDrawingSurfaceToCanvas();
+            },
+    });
+    const affirm = new rive.Rive({
+        src: '/resources/animations/affirm_notifications.riv',
+        canvas: document.getElementById("canvas_affirm"),
+        autoplay: true,
+        stateMachines: "demo",
+        onLoad: () => {
+            affirm.resizeDrawingSurfaceToCanvas();
+        },
+    });
+</script>
 </body>
 </html>
