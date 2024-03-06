@@ -1,97 +1,218 @@
-body {
-    font-family: Inter, sans-serif;
-    line-height: 150%;
-    background-color: #FFFFFF;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 48px;
-    margin-right: 48px;
-}
-.wrapper {
-    display: grid;
-}
-.page-wrapper {
-    display: grid;
-    grid-template-columns: minmax(180px, 1fr) 1024px minmax(100px, 1fr);
-    justify-content: center;
-}
-.left, .right {
+/* @import "compass/css3"; */
+
+/* Styles for global header */
+
+header {
     position: sticky;
     top: 0;
-    height: 100vh;
     background-color: #FFFFFF;
-}
-.main-content {
-    margin-left: 48px;
-    margin-right: 48px;
-    background-color: #EAEAEA;
-}
-[id^='canvas_'] {
-    width: 375px;
-    height: 766px;
-}
-.left h1 {
-    font-weight: 500;
-    font-style: normal;
-    font-size: medium;
+    padding: 1em 4em 1em 4em;
+    display: grid;
+    grid-template-columns: 200px minmax(13em, 1fr) 320px;
+    /* transition: box-shadow 200ms cubic-bezier(0.33, 1, 0.68, 1); */
     text-transform: uppercase;
-    margin-top: 48px;
+    z-index: 20;
 }
-.left h2 {
-    font-weight: 300;
-    font-size: medium;
-    color: #00000090;
+/* header.active {
+    box-shadow: hsla(0 0% 0% / 0.1) 0 0.5rem 1rem;
+    transition-duration: 400ms;
+} */
+.left {
+    display: flex;
+    padding: 1em;
+    color: #000000;
 }
-.left, .right p {
+.left a:any-link {
+    text-decoration: none;
+    color: #000000;
+}
+.menu {
+    display: flex;
+    gap: 1.3rem;
+    list-style-type: none;
+    justify-content: left;
+}
+.menu a:any-link {
+    text-decoration: none;
+    color: #000000;
+}
+.menu #currentpage {
+    text-decoration: underline;
+    text-underline-offset: .5em;
+}
+.menu > li:hover {
+    text-decoration: underline;
+    text-underline-offset: .5em;
+}
+
+/* Styles for global footer */
+
+footer {
+    background-color: #D2D2D2;
+    display: grid;
+    color: #00000060;
+    justify-content: center;
+    align-items: baseline;
+    padding-top: .25em;
+    font-size: small;
+    padding: 1em;
+}
+
+/* Styles for global text */
+
+body {
+    font-family: Inter, sans-serif;
+    font-size: 1em;
     line-height: 150%;
-    font-weight: 200;
-    font-size: medium;
+    background-color: #FFFFFF;
+    margin: 0 0 0 0;
+}
+
+/* Styles for home page */
+
+.home-wrapper {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-rows: repeat(4, 85vh);
+}
+
+/* Styles for home sections */
+
+section {
+    scroll-snap-align: start;
+}
+.home-section-content {
+    display: grid;
+    grid-template-rows: 36px 1fr 36px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    text-align: left;
+}
+.home-section-content span {
+   font-weight: 900;
+   color: #00000040;
+}
+.home-first-page {
+    background-color: #FFFFFF;
+    display: grid;
+}
+.home-second-page {
+    background-color: #EFEFEF;
+    display: grid;
+    grid-template-columns: 1fr 320px 1fr;
+    color: #00000080;
+}
+.home-third-page {
+    background-color: #E0E0E0;
+    display: grid;
+    grid-template-columns: 1fr 320px 1fr;
     color: #00000070;
 }
-.footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    text-align: center;
-    margin-bottom: 48px;
+#home {
+    width: 629px;
+    height: 89px;
 }
-.main-content-wrapper {
+.arrow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: baseline;
+    height: auto;
+    padding: 1em;
+}
+.brands {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
 }
-a {
-    text-decoration: none;
+
+/* Styles for works page */
+
+.work-wrapper {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-rows: repeat(10, 85vh);
 }
-a:link {
-    font-weight: 400;
-    color: #1EBFF0;
+.work-section-content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    text-align: left;
 }
-a:hover {
-    color: #A456E1;
+
+
+
+.work-odd-page {
+    background-color: #FFFFFF;
+    display: grid;
 }
+
+.work-even-page {
+    background-color: #EFEFEF;
+    display: grid;
+}
+
+/* Hack for Rive overwriting index */
+
+#hack-index-1 {
+    z-index: 2;
+}
+#hack-index-2 {
+    z-index: 3;
+}
+#hack-index-3 {
+    z-index: 4;
+}
+#hack-index-4 {
+    z-index: 5;
+}
+#hack-index-5 {
+    z-index: 6;
+}
+#hack-index-6 {
+    z-index: 7;
+}
+#hack-index-7 {
+    z-index: 8;
+}
+#hack-index-8 {
+    z-index: 9;
+}
+#hack-index-9 {
+    z-index: 10;
+}
+
+/* Styles for project sections */
+
 .project-item-mobile {
     display: grid;
-    grid-template-columns: 375px 1fr;
-    margin-top: 48px;
-    margin-left: 48px;
-    margin-right: 48px;
-    margin-bottom: 48px;
+    grid-template-columns: 300px minmax(18em,28em);
+    margin: 0 3em 0 3em;
     justify-content: center;
 }
+[id^='canvas_'] {
+    width: 300px;
+    height: 612px;
+}
+.project-item-mobile > .hero img {
+    width: 300px;
+}
+
+/* Styles for desktop projects */
+
 .project-item-desk {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 48px;
-    margin-left: 48px;
-    margin-right: 48px;
-    margin-bottom: 48px;
+    margin: 2em 2em 2em 2em;
     justify-content: center;
-}
-.hero {
-    height: auto;
-}
-.project-item-mobile > .hero img {
-    width: 375px;
 }
 .project-item-desk > .hero {
     grid-column: span 2;
@@ -99,12 +220,14 @@ a:hover {
 .project-item-desk > .hero img {
     width: 832px;
 }
-.project-item-mobile > .description {
-    margin-top: 220px;
-    margin-left: 48px;
-}
 .project-item-desk > .description {
-    margin-top: 48px;
+    margin-top: 2em;
+}
+
+/* Styles for project summaries */
+
+.description {
+    margin: 2em;
 }
 .description h1 {
     font-size: medium;
@@ -126,34 +249,84 @@ a:hover {
     font-size: medium;
     color: #00000070;
 }
+.description q {
+    padding-top: 0.333em;
+    font-style: italic;
+    line-height: 150%;
+    font-weight: 200;
+    font-size: medium;
+    color: #00000070;
+}
 .description p {
-    padding-top: 8px;
+    padding-top: 0.333em;
     line-height: 150%;
     font-weight: 200;
     font-size: medium;
     color: #00000070;
 }
 
-/* Below are styles for error pages */
+/* Styles for contact page */
+
+.contact-wrapper {
+    height: 85vh;
+    /* scroll-snap-type: y mandatory;
+    overflow-y: scroll; */
+    display: grid;
+    grid-template-rows: auto;
+}
+
+/* Styles for home sections */
+
+/* section {
+    scroll-snap-align: start;
+} */
+.contact-section-content {  
+    display: grid;
+    grid-template-rows: 36px 1fr 36px;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    text-align: center;
+}
+.contact-first-page {
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 1fr 320px 1fr;
+}
+#contact-header {
+    position: fixed;
+}
+
+
+/* Styles for CTA */
+
+.button {
+    background-color: #00A4FF;
+    border: none;
+    color: #FFFFFF;
+    padding: .25em 1.5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: medium;
+    border-radius: 4em;
+}
+
+/* Styles for error pages */
 
 .error {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px auto 100px;
 }
 .fourohfour {
-    font-family: Helvetica, sans-serif;
     text-align: center;
 }
 #think {
-    font-size: 120px;
-    color: #000000;
+    font-size: 6em;
 }
-.fourohfour > h1 {
-    font-size: 80px;
-    color: #00000040;
-}
-.fourohfour > p {
-    font-size: medium;
+.fourohfour h1 {
+    font-size: 4em;
+    line-height: 1em;
     color: #00000040;
 }
