@@ -2,7 +2,7 @@ User-agent: *
 Disallow: /resources/
 
 User-agent: *
-Disallow: /works/
+Disallow: /work/
 
 User-agent: *
 Disallow: /*.pdf
