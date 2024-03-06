@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W3NWZT2V0T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W3NWZT2V0T');
+</script>
+<link rel="stylesheet" href="resources/css/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Ed Gutman Design | Past Work</title>
+<meta name="description" content="Ed Gutman is a product and UX designer based out of the San Francisco Bay Area.">
+</head>
+
+<body>
+    <header id="page-header">
+        <div class="left">
+            <a class= "logo" href="/index.html">Ed Gutman Design</a>
+        </div>
+        <div class="space"></div>
+        <nav>
+            <ul class="menu" role="list">
+                <li><a href="/index.html">Home</a></li>
+                <!-- <li><a href="#posts">Posts</a></li> -->
+                <li><a id="currentpage" href="/work.html">Work</a></li>
+                <li><a href="#contact">Hire me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="work-wrapper">
+        <div class="project-item-mobile">
+            <div class="hero">
+                <canvas id="canvas_lyft"></canvas>
+            </div>
+            <div class="description">
+                <h1>Lyft</h1>
+                <h2>2023 • Tap to Add Credit Card</h2>
+                <q>I tried Lyft's credit card scanner and it messed up the number so I had to type it in myself which is really annoying.</q>
+                <p>Adding a credit card during Lyft signup while trying to schedule a ride is a high friction event, so we leveraged NFC technology to allow riders to tap smart cards on their phone to automatically fill credit card fields.</p>
+                <p>Rider maintained preference for manual entry, but the tap to add option won out over the photo capture option by almost 2 to 1.</p>
+            </div>
+        </div>
+        <div class="project-item-mobile">
+            <div class="hero">
+                <img src="resources/images/projects/2023-02.png">
+            </div>
+            <div class="description">
+                <h1>Lyft</h1>
+                <h2>2023 • Travel Points for Lyft Cash</h2>
+                <p>Leverage popular points programs to allow rewards points to be exchanged for Lyft Cash.</p>
+            </div>
+        </div>
+        <div class="project-item-mobile">
+            <div class="hero">
+                <img src="resources/images/projects/2022-03.png">
+            </div>
+            <div class="description">
+                <h1>Lyft</h1>
+                <h2>2022 • Lyft Cash Explorations</h2>
+                <p>Exploration the evolution of Lyft Cash to allow for more diversified payments-focused use cases.  </p>
+            </div>
+        </div>
+        <div class="project-item-mobile">
+            <div class="hero">
+                <img src="resources/images/projects/2022-02.png">
+            </div>
+            <div class="description">
+                <h1>Lyft</h1>
+                <h2>2022 • Driver Tip Gratitude</h2>
+                <p>Helping riders understand and get to know their drivers better through empathy-focused features.</p>
+                <a href="https://www.figma.com/file/Z6ynTFkkTT6ulusqfagyLr/portfolio?type=design&node-id=1470%3A3600&mode=design&t=QaAWrVt3ZoaAdzhD-1" class="button">View study</a>
+            </div>
+        </div>
+        <div class="project-item-mobile">
+            <div class="hero">
+                <canvas id="canvas_affirm"></canvas> <!-- rive animation -->
+            </div>
+            <div class="description">
+                <h1>Affirm</h1>
+                <h2>2022 • Notification Center</h2>
+                <q>...email is the only reference documentation I get from Affirm, I have nowhere else to put all your notifications together...</q>
+                <p>Introduced a notifications feed in the Affirm app to help customers improve access to messaging from Affirm and take action on critical alerts.</p>
+                <p>Launch saw an overall 1% attributed increase in loan repayment rates amongst customers exposed to Phase 1 of this feature.</p>
+                <p><a href="https://www.figma.com/file/Z6ynTFkkTT6ulusqfagyLr/portfolio?type=design&node-id=920%3A2152&mode=design&t=QaAWrVt3ZoaAdzhD-1" class="button">Read case study</a></p>
+            </div>
+        </div>
+        <div class="project-item-mobile">
+            <div class="hero">
+                <img src="resources/images/projects/2022-04.png">
+            </div>
+            <div class="description">
+                <h1>Affirm</h1>
+                <h2>2022 • Virtual Card</h2>
+                <p>Updating the Affirm App to make Virtual Cards a first class flow instead of a buried options in the checkout flow.</p>
+            </div>
+        </div>
+        <div class="project-item-mobile">
+            <div class="hero">
+                <img src="resources/images/projects/2021-03.png">
+            </div>
+            <div class="description">
+                <h1>Affirm</h1>
+                <h2>2021 • Loan Repayment Redesign</h2>
+                <q>I get lost trying to find how to make a payment and easily lose track of what payment is due when.</q>
+                <p>Updated the Affirm loan repayment experience to better scale for new functionality and encourage repeat transactions.</p>
+                <p>Launched as a series of experiments that saw a stat significant 0.5-2% increase in loan repayment rates; individual winners graduated to production.</p>
+                <p><a href="https://www.figma.com/file/Z6ynTFkkTT6ulusqfagyLr/portfolio?type=design&node-id=993%3A2959&mode=design&t=QaAWrVt3ZoaAdzhD-1" class="button">View study</a></p>
+            </div>
+        </div>
+        <div class="project-item-mobile">
+            <div class="hero">
+                <img src="resources/images/projects/2019-02.png">
+            </div>
+            <div class="description">
+                <h1>Affirm</h1>
+                <h2>2021 • Recommended Help Channels</h2>
+                <q>I'm so frustrated trying to find answers to my question on the website, so I just Googled your customer support number.</q>
+                <p>Customers miss opportunities for easy self service within the Affirm Help Center, so we introduced a contact flow that suggests channels for the best outcomes based on the customer's query.</p>
+                <p>After launch there was a 31% increase in Affirm's CSAT score and a 32% decrease in support contacts.</p>
+            </div>
+        </div>
+        <div class="project-item-mobile">
+            <div class="hero">
+                <img src="resources/images/projects/2019-04.png">
+            </div>
+            <div class="description">
+                <h1>Quantcast</h1>
+                <h2>2019 • Permisio (GDPR preferences)</h2>
+                <p>Gives EU internet users an account management experience that allows them to save their GDPR preferences across the web.</p>
+            </div>
+        </div>
+        <!-- <div class="project-item-desk">
+            <div class="hero">
+                <img src="resources/images/projects/2019-03.png">
+            </div>
+            <div class="description">
+                <h1>Quantcast</h1>
+                <h2>2019 • Pixel Tracking Software</h2>
+                <p>Brought an onboarding flow to Quantcast's pixel tracking app, and added diagnostic tools and analytics to help agencies troubleshoot ongoing issues.</p>
+                <p><a href="https://www.figma.com/file/Z6ynTFkkTT6ulusqfagyLr/portfolio?type=design&node-id=1599%3A1799&mode=design&t=QaAWrVt3ZoaAdzhD-1" class="button">View study</a></p>
+            </div>
+        </div> -->
+        <div class="project-item-mobile">
+            <div class="hero">
+                <img src="resources/images/projects/2019-01.png">
+            </div>
+            <div class="description">
+                <h1>Litlab</h1>
+                <h2>2019 • Kidappolis Learning App Suite</h2>
+                <p>Leveraged parent's phones to bring the learning experience to the home.</p>
+            </div>
+        </div>
+    </div>
+    <script src="resources/js/rive.js"></script> <!-- rive 2.10.3 -->
+    <script>
+        const lyft = new rive.Rive({
+            src: '/resources/animations/lyft_tap_to_add.riv',
+            canvas: document.getElementById("canvas_lyft"),
+            autoplay: true,
+            stateMachines: "demo",
+            onLoad: () => {
+                lyft.resizeDrawingSurfaceToCanvas();
+            },
+        });
+        const affirm = new rive.Rive({
+            src: '/resources/animations/affirm_notifications.riv',
+            canvas: document.getElementById("canvas_affirm"),
+            autoplay: true,
+            stateMachines: "demo",
+            onLoad: () => {
+                affirm.resizeDrawingSurfaceToCanvas();
+            },
+        });
+    </script>
+    <!-- <script src="resources/js/index.js"></script> -->
+</body>
+</html>
