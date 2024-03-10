@@ -269,7 +269,9 @@ section {
         scroll-snap-type: none;
         flex-direction: column;
     }
-
+    .project-item-mobile {
+        margin: 0;
+    }
 }
 
 /* Styles for desktop projects */
