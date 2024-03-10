@@ -34,13 +34,27 @@
                 <li><a href="/work.html">Work</a></li>
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </nav>
     </header>
+    <div id="overlay-menu" style="display: none;">
+        <a id="overlaypage" href="/index.html">Home</a>
+        <a href="/work.html">Work</a>
+        <a href="/contact.html">Contact</a>
+    </div>
     <div class="home-wrapper">
         <section class="home-first-page">
             <div class="home-section-content">
                 <div></div>
-                <div><canvas id="home"></canvas></div> <!-- rive animation -->
+                <div>
+                    <video id="home-animation" autoplay muted>
+                        <source src="/resources/animations/home_logo.webm" type="video/webm">
+                    </video>
+                </div>
                 <div><img class="arrow" src="/resources/images/arrow1.svg"></div>
             </div>
         </section>
@@ -75,18 +89,6 @@
             (c) Ed Gutman 2024
         </footer>
     </div>
-    <script src="resources/js/rive.js"></script> <!-- rive 2.10.3 -->
-    <script>
-        const home = new rive.Rive({
-            src: '/resources/animations/home_logo.riv',
-            canvas: document.getElementById("home"),
-            autoplay: true,
-            stateMachines: "home",
-                onLoad: () => {
-            home.resizeDrawingSurfaceToCanvas();
-            },
-        });
-    </script>
-    <!-- <script src="resources/js/index.js"></script> -->
+    <script src="resources/js/index.js"></script>
 </body>
 </html>
