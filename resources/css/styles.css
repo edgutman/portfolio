@@ -71,7 +71,6 @@ header {
     background-color: #EFEFEF;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
     padding-left: 3em;
 }
@@ -345,9 +344,6 @@ section {
 
 /* Styles for home sections */
 
-/* section {
-    scroll-snap-align: start;
-} */
 .contact-section-content {  
     display: grid;
     grid-template-rows: 36px 1fr 36px;
