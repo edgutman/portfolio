@@ -34,15 +34,25 @@
                 <li><a href="/work.html">Work</a></li>
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </nav>
     </header>
+    <div id="overlay-menu" style="display: none;">
+        <a id="overlaypage" href="/index.html">Home</a>
+        <a href="/work.html">Work</a>
+        <a href="/contact.html">Contact</a>
+    </div>
     <div class="home-wrapper">
         <section class="home-first-page">
             <div class="home-section-content">
                 <div></div>
-                <div class="home-animation">
-                    <video autoplay width="340">
-                        <source src="/resources/animations/home_logo.mp4" type="video/mp4">
+                <div>
+                    <video id="home-animation" autoplay muted>
+                        <source src="/resources/animations/home_logo.webm" type="video/webm">
                     </video>
                 </div>
                 <div><img class="arrow" src="/resources/images/arrow1.svg"></div>
@@ -79,6 +89,6 @@
             (c) Ed Gutman 2024
         </footer>
     </div>
-    <!-- <script src="resources/js/index.js"></script> -->
+    <script src="resources/js/index.js"></script>
 </body>
 </html>
