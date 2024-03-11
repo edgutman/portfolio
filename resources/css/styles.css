@@ -370,6 +370,13 @@ section {
     position: fixed;
 }
 
+/* Styles for contact */
+.avatar {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
 
 /* Styles for CTA */
 
