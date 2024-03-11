@@ -47,7 +47,7 @@ header {
     background-color: #000000;
     margin: 4px 0;
 }
-@media (max-width: 600px) {
+@media (max-width: 876px) {
     header {
         padding: 1em 2em;
         grid-template-columns: 200px 1fr 25px;
@@ -156,12 +156,12 @@ section {
 #home-animation {
     width: 327px;
 }
-@media (min-width: 600px) {
+@media (min-width: 876px) {
     #home-animation {
         width: 600px; /* Width for viewports more than 600px */
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 876px) {
     .home-section-content {
         font-size: 1.2em;
     }
@@ -254,8 +254,11 @@ section {
 .project-item-mobile > .hero img {
     width: 300px;
 }
-@media (max-width: 600px) {
+@media (max-width: 876px) {
     .work-odd-page {
+        margin-bottom: 2em;
+    }
+    .work-even-page {
         margin-bottom: 2em;
     }
     .project-item-mobile {
@@ -295,8 +298,11 @@ section {
 
 .description {
     margin: 2em;
+    display: flex;
+    flex-direction: column;
 }
 .description h1 {
+    margin-bottom: 0;
     font-size: medium;
     font-weight: 400;
     color: #00000080;
@@ -317,7 +323,6 @@ section {
     color: #00000070;
 }
 .description q {
-    padding-top: 0.333em;
     font-style: italic;
     line-height: 150%;
     font-weight: 200;
@@ -325,11 +330,15 @@ section {
     color: #00000070;
 }
 .description p {
-    padding-top: 0.333em;
+    margin-top: 0;
     line-height: 150%;
     font-weight: 200;
     font-size: medium;
     color: #00000070;
+}
+.attribution {
+    margin-top: 0;
+    text-align: right;
 }
 
 /* Styles for contact page */
