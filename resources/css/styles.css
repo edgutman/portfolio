@@ -9,7 +9,7 @@ header {
     align-items: center;
     grid-template-columns: 200px minmax(80px, 1fr) 320px;
     text-transform: uppercase;
-    z-index: 20;
+    z-index: 9999;
 }
 .left {
     display: flex;
@@ -64,6 +64,7 @@ header {
 }
 #overlay-menu {
     position: fixed;
+    z-index: 9998;
     top: 0;
     left: 0;
     width: 100%;
@@ -83,8 +84,6 @@ header {
     text-decoration: underline;
     text-underline-offset: .5em;
 }
-
-
 
 /* Styles for global footer */
 
@@ -158,7 +157,7 @@ section {
 }
 @media (min-width: 876px) {
     #home-animation {
-        width: 600px; /* Width for viewports more than 600px */
+        width: 600px;
     }
 }
 @media (max-width: 876px) {
@@ -203,40 +202,9 @@ section {
     background-color: #FFFFFF;
     display: grid;
 }
-
 .work-even-page {
     background-color: #EFEFEF;
     display: grid;
-}
-
-/* Hack for Rive overwriting index */
-
-#hack-index-1 {
-    z-index: 2;
-}
-#hack-index-2 {
-    z-index: 3;
-}
-#hack-index-3 {
-    z-index: 4;
-}
-#hack-index-4 {
-    z-index: 5;
-}
-#hack-index-5 {
-    z-index: 6;
-}
-#hack-index-6 {
-    z-index: 7;
-}
-#hack-index-7 {
-    z-index: 8;
-}
-#hack-index-8 {
-    z-index: 9;
-}
-#hack-index-9 {
-    z-index: 10;
 }
 
 /* Styles for project sections */
@@ -345,8 +313,6 @@ section {
 
 .contact-wrapper {
     height: 85vh;
-    /* scroll-snap-type: y mandatory;
-    overflow-y: scroll; */
     display: grid;
     grid-template-rows: auto;
 }
