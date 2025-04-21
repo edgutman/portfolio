@@ -4,12 +4,15 @@
   "description": "Ed Gutman's Portfolio Website",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -p 3000"
   },
   "dependencies": {
     "@rive-app/canvas": "^2.7.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
   "author": "Ed Gutman",
   "license": "ISC"
 } 

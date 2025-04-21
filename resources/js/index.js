@@ -82,6 +82,6 @@ function sendEmail(event) {
         const contactDrawer = document.querySelector('.contact-drawer');
         if (contactDrawer) {
             contactDrawer.classList.remove('open');
-        }
+  }
     }, 500);
 }

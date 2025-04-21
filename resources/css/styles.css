@@ -125,7 +125,7 @@ nav {
     background-color: #333;
     margin: 4px 0;
     transition: 0.3s;
-}
+    }
 
 /* Mobile menu overlay */
 #overlay-menu {
@@ -229,7 +229,7 @@ nav {
     cursor: pointer;
     z-index: 10;
     pointer-events: auto;
-}
+    }
 
 .scroll-indicator i {
     font-size: 2rem;
@@ -798,4 +798,31 @@ footer {
         width: 100%;
         min-width: 0;
     }
+}
+
+.work-card {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    transform: none; /* Remove transform for small screens */
+}
+
+@media (min-width: 768px) {
+    .work-card {
+        position: absolute;
+        transform: translate(var(--x, 0), var(--y, 0));
+        margin: 0;
+    }
+    
+    .work-card:nth-child(1) { --x: -20%; --y: -10%; }
+    .work-card:nth-child(2) { --x: 20%; --y: -5%; }
+    .work-card:nth-child(3) { --x: -15%; --y: 5%; }
+    .work-card:nth-child(4) { --x: 15%; --y: 10%; }
 }
